@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Art</title>
+    <style>
+.text{
+    color:#000000;
+    font-size: 24px;
+    font-family: Raleway,Arial,sans-serif;
+}
+.head{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.myart:hover,.about:hover{
+    background-color: gainsboro;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.section1,.section2{
+    display:flex;
+    flex-direction:column;
+}
+
+.centerpart{
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    align-items: center;
+}
+.centerpart img{
+    width:400px;
+    height:600px;
+    
+}
+
+form{
+    font-size: 15px; 
+    font-family: Raleway,Arial,sans-serif;
+    color:#000000;
+}
+form input,button{
+    width:600px;
+    height:30px;
+}
+button{
+    background-color:gray;
+}
+button:hover{
+    background-color: black;
+    color:white;
+}
+.anchor a{
+    color:#000000;
+}
+.anchor a:hover{
+    color:green;
+}
+@media screen and (max-width:495px){
+    .container{
+        display:flex;
+        flex-direction: column;
+    }
+    .section1,.section2{
+        display:flex;
+        flex-direction:column;
+    }
+    form input,button{
+        width:50%;
+        height:20px;
+    }
+    .centerpart img{
+        width:60%;
+        height:30%;
+        
+    }
+
+}
+@media screen and (max-width:768px){
+    .container{
+        display:flex;
+        flex-direction: column;
+    }
+    .section1,.section2{
+        display:flex;
+        flex-direction:column;
+    }
+    form input,button{
+        width:70%;
+        height:28px;
+    }
+
+}
+    </style>
+  </head>
+  <body>
+    <div class="text">
+
+        <header class="head">
+        <div class="myart">
+          <p>MY ART</p>
+        </div>
+
+        <div class="about">
+          <p>About</p>
+        </div>
+        </header>
+
+    </div>
+
+    <div class="container">
+
+      <div class="section1">
+        <img src="./streetart.jpg" width="100%" alt="streetart1" />
+        <img src="./streetart3.jpg" width="100%" alt="streetart3" />
+        <img src="./streetart5.jpg" width="100%" alt="streetart5" />
+      </div>
+
+      <div class="section2">
+        <img src="./streetart2.jpg" width="100%" alt="streetart2" />
+        <img src="./streetart4.jpg" width="100%" alt="streetart5" />
+      </div>
+
+    </div>
+
+    <div class="centerpart">
+      <p class="text">About</p>
+      <img src="./boy.jpg" />
+      <p style="font-size: 15px; font-family: Raleway, Arial, sans-serif">
+        Just me, myself and I, exploring the universe of unknownment. I have a
+        heart of love and an interest of lorem ipsum and mauris<br />
+        neque quam blog. I want to share my world with you. Praesent tincidunt
+        sed tellus ut rutrum. Sed vitae justo condimentum, porta<br />
+        lectus vitae, ultricies congue gravida diam non fringilla. Praesent
+        tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta<br />lectus
+        vitae, ultricies congue gravida diam non fringilla.
+      </p>
+      <p
+        style="
+          font-size: 15px;
+          font-family: Raleway, Arial, sans-serif;
+          color:brown;
+        "
+      >
+        Do not hesitate to contact me!
+      </p>
+
+      <form>
+        <label for="name">Name</label><br />
+        <input type="text" id="name" required /><br /><br />
+
+        <label for="email">Email</label><br />
+        <input type="email" id="email" required /><br /><br />
+
+        <label for="message">Message</label><br />
+        <input type="text" id="message" required /><br /><br />
+
+        <button onclick="alert('Message Sent')" type="submit">Send</button>
+      </form>
+      <div class="anchor">
+        <p style="
+        font-size: 15px;
+        font-family: Raleway, Arial, sans-serif;">
+          Powered by
+          <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
